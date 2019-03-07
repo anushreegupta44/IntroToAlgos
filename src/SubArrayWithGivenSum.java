@@ -8,7 +8,7 @@ public class SubArrayWithGivenSum {
     Integer start = 0;
     Integer i;
     Integer length = list.size();
-    for (i = 1; i <= length; i++) {
+    for (i = 1; i <= length; ) {
       while (currentSum < sum && i < length) {
         currentSum += list.get(i);
         i++;
